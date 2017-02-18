@@ -4,27 +4,30 @@ html, body{
 }
 
 .adblock-modal {
-  position: absolute;
+  position: fixed;
   z-index: 9999;
+  left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
-  text-align: center;
-  font-family: 'Arial', Sans-serif;
   font-size: 14px;
-  background:rgba(0, 0, 0, 0.7);
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
   display: none;
+  overflow: hidden;
 }
 
 .adblock-modal-container {
-  position: relative;
   display: inline-block;
+  position: relative;
   width: calc(100% - 40px);
   max-width: 500px;
   height: 280px;
-  margin: 20px;
+  top: calc(50% - 140px);
+  margin: 0px 20px 0px 20px;
   text-align: left;
   background: #fff;
-  border-radius: 8px;
+  border-radius: 4px;
 }
 
 .adblock-modal-container h1 {
